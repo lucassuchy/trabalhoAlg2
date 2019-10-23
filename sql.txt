@@ -1,0 +1,13 @@
+create table categorias (
+	id int not null primary key auto_increment,
+	nome varchar(100) not null
+);
+
+create table produtos(
+	id int not null primary key auto_increment,
+	nome varchar(100) not null,
+	preco double default 0.0]
+	quantidade double,
+	codcategoria int not null,
+	foreing key (codcategoria) refereces categorias(id)
+);
